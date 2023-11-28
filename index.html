@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Volumetrics</title>
+
+    <script src="https://cdn.jsdelivr.net/gh/volumetrics-io/mrjs@latest/dist/mr.js"></script>
+    <!-- <script src="./library/mr.js"></script> -->
+    <style>
+        @font-face {
+            font-family: 'Onest';
+            src: url('./fonts/Onest-Regular.woff') format('woff');
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'Onest';
+            src: url('./fonts/Onest-Bold.woff') format('woff');
+            font-weight: 700;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            border-collapse: collapse;
+        }
+
+        html {
+            overflow: hidden;
+            overscroll-behavior: none;
+        }
+
+        body {
+            position: fixed;
+        }
+
+        mr-surface {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        mr-app * {
+            display: block;
+        }
+
+
+        mr-img {
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+        }
+
+
+        .mainContainer {
+            background-color: white;
+            /* opacity: 1; */
+            border-radius: 20px;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .mainColumn {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .h1 {
+            font-size: 48px;
+            line-height: 110%;
+            color: #333333;
+            font-family: "Onest";
+            font-weight: 700;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .h2 {
+            font-size: 36px;
+            line-height: 150%;
+            color: #333333;
+            font-family: "Onest";
+            font-weight: 700;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .subheading {
+            width: 100%;
+            font-size: 18px;
+            line-height: 100%;
+            color: #333333;
+            font-family: "Onest";
+            font-weight: 400;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .paragraph {
+            color: #333333;
+            font-size: 24px;
+            line-height: 200%;
+            font-family: "Onest";
+            font-weight: 400;
+            /* width: 100%; */
+            margin-top: 40px;
+            margin-bottom: 40px;
+            /* margin-bottom: 20px; */
+            text-align: left;
+        }
+
+        .paragraph-end {
+            height: 200px;
+        }
+
+        .toolbar {
+            background-color: hotpink;
+            border-radius: 1%;
+            height: 80px;
+            width: 150px;
+        }
+
+        .button {
+            text-align: left;
+        }
+
+        #debug {
+            font-size: 36px;
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <mr-app debug="true" camera="camera: perspective">
+        <mr-surface>
+            <mr-container class="mainContainer">
+                <mr-column class="mainColumn">
+                    <mr-img src="./images/placeholder.jpg"></mr-img>
+                    <mr-text class="h1">Make your spatial app a reality</mr-text>
+                    <mr-text class="subheading">Create web-based spatial experiences for mixed-reality, in mixed
+                        reality.</mr-text>
+                    <mr-text class="subheading">We just started to build, but you can follow our progress
+                        already!</mr-text>
+
+                    <mr-row>
+                        <mr-column>
+                            <mr-text class="paragraph">
+                                At dui pharetra adipiscing amet velit gravida in labore lectus.
+                            </mr-text>
+                        </mr-column>
+                        <mr-column>
+                            <mr-text class="paragraph">
+                                Incididunt labore sed amet vulputate est vestibulum gravida pellentesque quis.
+                            </mr-text>
+                        </mr-column>
+                        <mr-column>
+                            <mr-text class="paragraph">
+                                Cras ut sed est pulvinar at pharetra proin sed nibh.
+                            </mr-text>
+                        </mr-column>
+                    </mr-row>
+
+                    <mr-text class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore
+                        dolemus, fieri tamen.
+                    </mr-text>
+
+                    <mr-img src="./images/placeholder.jpg"></mr-img>
+                </mr-column>
+
+            </mr-container>
+        </mr-surface>
+    </mr-app>
+</body>
+
+<!-- <script src="./scripts/AnimationSystem.js"></script> -->
+
+</html>
